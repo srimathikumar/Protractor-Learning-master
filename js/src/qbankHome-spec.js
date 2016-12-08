@@ -1,16 +1,16 @@
 "use strict";
-var login_po_1 = require('./login.po');
-var qbankHome_po_1 = require('./qbankHome.po');
-var protractor_1 = require('protractor');
-var videoPlayer_po_1 = require('./videoPlayer.po');
-var qbank_po_1 = require('./qbank.po');
+const login_po_1 = require('./login.po');
+const qbankHome_po_1 = require('./qbankHome.po');
+const protractor_1 = require('protractor');
+const videoPlayer_po_1 = require('./videoPlayer.po');
+const qbank_po_1 = require('./qbank.po');
 var fs = require('fs');
 describe('qbankHomeTest', function () {
     var testName = this.getFullName();
-    var login;
-    var qbankHome;
-    var videoPlayer;
-    var qbank;
+    let login;
+    let qbankHome;
+    let videoPlayer;
+    let qbank;
     beforeEach(function () {
         login = new login_po_1.loginPage();
         qbankHome = new qbankHome_po_1.qbankHomePage();

@@ -1,9 +1,9 @@
 "use strict";
 require('./polyfills.ts');
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var core_1 = require('@angular/core');
-var environment_1 = require('./environments/environment');
-var _1 = require('./app/');
+const platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
+const core_1 = require('@angular/core');
+const environment_1 = require('./environments/environment');
+const _1 = require('./app/');
 if (environment_1.environment.production) {
     core_1.enableProdMode();
 }

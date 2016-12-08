@@ -19,14 +19,14 @@ describe('StudyPlanTest', function () {
         console.log('testing first test in protractor');
         console.log(testName);
         originalHandle = '';
-        expect(login.logInWithProductCode('MCAT').then(function (value) {
+        expect(login.loginWithClassCode('MRGL14025').then(function (value) {
             console.log(value);
         }));
         protractor_1.browser.driver.getWindowHandle().then(function (originalHandle) {
             console.log(originalHandle);
         });
         protractor_1.browser.get('https://feature6-atom.kaptest.com/dashboard');
-        protractor_1.browser.sleep(1000);
+        protractor_1.browser.sleep(10000);
         // studyPlan.clickMoreResourcesTab();
         // browser.driver.getWindowHandle().then(function(newHandle){
         //     console.log(newHandle);
@@ -44,5 +44,5 @@ describe('StudyPlanTest', function () {
             expect(url).toContain('/dashboard');
         });
     });
-}); //# sourceMappingURL=studyPlan-spec.js.map
-//# sourceMappingURL=studyPlan-spec.js.map
+});
+//# sourceMappingURL=studyPlan-spec.1.js.map

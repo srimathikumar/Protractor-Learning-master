@@ -9,8 +9,8 @@ exports.config = {
   specs: [
     // './e2e/**/bin/courseware-tests/studyPlan-spec.js' 
 
-    // './e2e/**/studyPlan-spec.ts'
-    './e2e/**/studyPlan-spec.js'
+    './e2e/**/studyPlan-spec.1.ts'
+    // './e2e/**/studyPlan-spec.js'
     // './e2e/**/qbankHome-spec.ts'
  // './e2e/**/qbankHome-spec.js'
  //'./e2e/**/javascript.check.js'

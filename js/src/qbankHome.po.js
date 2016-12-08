@@ -1,16 +1,16 @@
 "use strict";
-var protractor_1 = require('protractor');
-var qbankHomePage = (function () {
-    function qbankHomePage() {
+const protractor_1 = require('protractor');
+class qbankHomePage {
+    constructor() {
         this.CREATE_QBANK_QUESTIONS = protractor_1.element(protractor_1.by.css('.create-test-btn'));
     }
-    qbankHomePage.prototype.goToQBankHome = function () {
+    goToQBankHome() {
         return protractor_1.browser.get('https://qa-atom.kaptest.com/qbank');
-    };
-    qbankHomePage.prototype.clickHeaderNavTabScrollsToSection = function (title, scrollToSection) {
+    }
+    clickHeaderNavTabScrollsToSection(title, scrollToSection) {
         var section = protractor_1.element(protractor_1.by.css('#' + scrollToSection + ' .container'));
-    };
-    qbankHomePage.prototype.hamburgerMenuIsVisible = function () {
+    }
+    hamburgerMenuIsVisible() {
         return protractor_1.browser.wait(protractor_1.protractor.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.by.css('.fa-bars'))), 5000).then(function () {
             console.log('hamburger visible');
             return true;
@@ -18,8 +18,8 @@ var qbankHomePage = (function () {
             console.error("failed hamburfer test");
             return false;
         });
-    };
-    qbankHomePage.prototype.reviewContentItem = function (sequenceId, sequence) {
+    }
+    reviewContentItem(sequenceId, sequence) {
         var url = 'https://qa-atom.kaptest.com/qbank/review/preview/' + sequenceId + '/' + sequence;
         protractor_1.browser.get(url);
         return protractor_1.browser.wait(protractor_1.protractor.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.by.css('.answer-choice-text'))), 10000).then(function () {
@@ -27,11 +27,10 @@ var qbankHomePage = (function () {
         }, function (err) {
             return false;
         });
-    };
-    qbankHomePage.prototype.clickCreateQBank = function () {
+    }
+    clickCreateQBank() {
         this.CREATE_QBANK_QUESTIONS.click();
-    };
-    return qbankHomePage;
-}());
+    }
+}
 exports.qbankHomePage = qbankHomePage;
 //# sourceMappingURL=qbankHome.po.js.map

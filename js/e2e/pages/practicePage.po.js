@@ -1,8 +1,5 @@
 "use strict";
-var practicePage = (function () {
-    function practicePage() {
-    }
-    return practicePage;
-}());
+class practicePage {
+}
 exports.practicePage = practicePage;
 //# sourceMappingURL=practicePage.po.js.map

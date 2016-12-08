@@ -12,11 +12,10 @@ Promise.all([
     System.import('@angular/core/testing'),
     System.import('@angular/platform-browser-dynamic/testing')
 ])
-    .then(function (_a) {
-    var testing = _a[0], testingBrowser = _a[1];
+    .then(([testing, testingBrowser]) => {
     testing.getTestBed().initTestEnvironment(testingBrowser.BrowserDynamicTestingModule, testingBrowser.platformBrowserDynamicTesting());
 })
-    .then(function () { return require.context('./', true, /\.spec\.ts/); })
-    .then(function (context) { return context.keys().map(context); })
+    .then(() => require.context('./', true, /\.spec\.ts/))
+    .then(context => context.keys().map(context))
     .then(__karma__.start, __karma__.error);
 //# sourceMappingURL=test.js.map

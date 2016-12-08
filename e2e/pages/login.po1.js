@@ -28,7 +28,8 @@ var loginPage = (function () {
         });
     };
     loginPage.prototype.loginWithKecAccount = function () {
-        protractor_1.browser.get('https://qa-atom.kaptest.com/login/kec?redirectUrl=/login/atom');
+        // protractor_1.browser.get('https://qa-atom.kaptest.com/login/kec?redirectUrl=/login/atom');
+        protractor_1.browser.get('https://feature6-atom.kaptest.com/login/kec?redirectUrl=/login/atom');
         this.DOMAIN_USERNAME.sendKeys('kec\\Abot');
         this.DOMAIN_PASSWORD.sendKeys('8ufRAbRa');
         this.SUBMIT_BUTTON.click();
