@@ -45,11 +45,11 @@ describe('StudyPlanTest',function(){
         // })
 
        browser.driver.getCurrentUrl().then(function(url){
-           let list = [4, 5, 6,7,8,9,9,9,9,];
+        //    let list = [4, 5, 6,7,8,9,9,9,9,];
 
-            for (let i in list) {
-                console.log(i); // "0", "1", "2",
-            }
+        //     for (let i in list) {
+        //         console.log(i); // "0", "1", "2",
+        //     }
             console.log(url);
             expect(url).toContain('/dashboard');
         })

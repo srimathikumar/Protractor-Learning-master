@@ -49,7 +49,7 @@ export class loginPage{
         return browser.driver.isElementPresent(by.css('content')).then(function (isPresent){
               return isPresent;
         });
-    }
+    }   
 
 
     
