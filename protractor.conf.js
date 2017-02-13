@@ -8,8 +8,9 @@ exports.config = {
   allScriptsTimeout: 11000,
   specs: [
     // './e2e/**/bin/courseware-tests/studyPlan-spec.js' 
+     './e2e/**/courseware-tests/greeter.ts'
 
-    './e2e/**/dashboardTest-spec.ts'
+    // './e2e/**/dashboardTest-spec.ts'
 
     // './e2e/**/studyPlan-spec.js'
     // './e2e/**/qbankHome-spec.ts'

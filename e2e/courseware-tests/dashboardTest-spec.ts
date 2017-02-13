@@ -81,7 +81,7 @@ describe ('Dashboard Tests -', function(){
      describe('verify sat account', function(){
 
         var testname= this.getFullName();
-        it ('tests front door login + homework as session title', function(){
+        fit ('tests front door login + homework as session title', function(){
             console.log('------------'+testname+'------------');
             
             //front door login
