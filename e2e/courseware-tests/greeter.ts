@@ -80,3 +80,15 @@ fdescribe('String examples', function(){
     });
 
 });
+
+//Override example for qbank :
+    // it('verifyAnswerChoiceContentItemsDisplayedInItemReviewSection', function(){
+    //     login.logInWithProductCode('SHIELD');
+    //     qbankHome.goToQBankHome();
+    //     browser.manage().addCookie('atom.web.fakes',
+    //     'GET={"/api/qbank/jasper/content/preview/286663/1":"http://qa-atom-support.kaptest.com/Atom/json/api/jasper/content/preview/NewJSONFormat/QBank_AllContentItems.json"}');
+    //     browser.sleep(5000);
+    //     expect(qbankHome.reviewContentItem('286663','1')).toBe(true,'Answer choice display after override');
+    //     browser.sleep(5000);
+        
+    // });
