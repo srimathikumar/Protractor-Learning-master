@@ -69,17 +69,60 @@ fdescribe('String examples', function(){
 
     function nameProvider(){
         return[
-            {firstname : 'Srimathi', lastName : 'Kumar'}
+            {firstname : 'Srimathi', lastName : 'Kumar', age : 10, adult : true},
+            {firstname : 'ff', lastName : 'Kumar', age : 20, adult : true},
+            {firstname : 'Nikdsfdsgsghila', lastName : 'Kumar', age : 10, adult : false}, 
+            {firstname : 'sfsfsg', lastName : 'Kumar', age : 20 , adult : false}
         ];
     }
     using(nameProvider, function(data){
         it('should output names', function(){
-            console.log(data.firstname + " " + data.lastName);
+            console.log(data.firstname + " " + data.lastName + "--" + data.age + "--" + data.adult);
+            expect(data.firstName).toBe('Srimathi');
         });
 
     });
 
 });
+
+describe('function object example', function(){
+    function printlabel(labelledObject : {label : string}){
+        console.log(labelledObject.label);
+    }
+    let mylabelObject = {size : 10, label : 'Size 10 object'};
+    printlabel(mylabelObject);
+});
+
+describe('First interface example', function(){
+    interface labelledValue{
+        label : String;
+    }
+
+    function printLabel(labelledObject : labelledValue ){
+        console.log(labelledObject.label);
+    }
+
+    let myLabel = {label : 'size 10 object using interface'};
+    printLabel(myLabel);
+
+    let someArray = [ 1,"String...", false];
+
+    for(let arr of someArray){
+        console.log(arr);
+    }
+
+    let list = [4, 5, 6];
+
+    for(let i in list){
+        console.log (" using IN " + i);
+    }
+    for(let i of list){
+        console.log (" using OF " + i);
+    }
+
+});
+
+
 
 //Override example for qbank :
     // it('verifyAnswerChoiceContentItemsDisplayedInItemReviewSection', function(){
