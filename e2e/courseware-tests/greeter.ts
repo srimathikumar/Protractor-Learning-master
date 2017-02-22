@@ -27,13 +27,13 @@ describe('test subtraction with data provider - direct array', function () {
     });
 });
 
-describe('test addition with data provider - provider function', function () {
+fdescribe('test addition with data provider - provider function', function () {
     function plusProvider() {
         return [
             {a: 2, b: 3, expected: 5},
-            // {a: '14', b: 15, expected: 29},
+            {a: 1, b: 15, expected: 29},
             {a: 12, b: 13, expected: 25},
-            // {a: '22', b: '13', expected: 35},
+            {a: 22, b: 13, expected: 35},
         ];
     }
  
@@ -65,7 +65,7 @@ describe('My fantastic test', function () {
     });
 });
 
-fdescribe('String examples', function(){
+describe('String examples', function(){
 
     function nameProvider(){
         return[
@@ -85,42 +85,42 @@ fdescribe('String examples', function(){
 
 });
 
-describe('function object example', function(){
-    function printlabel(labelledObject : {label : string}){
-        console.log(labelledObject.label);
-    }
-    let mylabelObject = {size : 10, label : 'Size 10 object'};
-    printlabel(mylabelObject);
-});
+// describe('function object example', function(){
+//     function printlabel(labelledObject : {label : string}){
+//         console.log(labelledObject.label);
+//     }
+//     let mylabelObject = {size : 10, label : 'Size 10 object'};
+//     printlabel(mylabelObject);
+// });
 
-describe('First interface example', function(){
-    interface labelledValue{
-        label : String;
-    }
+// describe('First interface example', function(){
+//     interface labelledValue{
+//         label : String;
+//     }
 
-    function printLabel(labelledObject : labelledValue ){
-        console.log(labelledObject.label);
-    }
+//     function printLabel(labelledObject : labelledValue ){
+//         console.log(labelledObject.label);
+//     }
 
-    let myLabel = {label : 'size 10 object using interface'};
-    printLabel(myLabel);
+//     let myLabel = {label : 'size 10 object using interface'};
+//     printLabel(myLabel);
 
-    let someArray = [ 1,"String...", false];
+//     let someArray = [ 1,"String...", false];
 
-    for(let arr of someArray){
-        console.log(arr);
-    }
+//     for(let arr of someArray){
+//         console.log(arr);
+//     }
 
-    let list = [4, 5, 6];
+//     let list = [4, 5, 6];
 
-    for(let i in list){
-        console.log (" using IN " + i);
-    }
-    for(let i of list){
-        console.log (" using OF " + i);
-    }
+//     for(let i in list){
+//         console.log (" using IN " + i);
+//     }
+//     for(let i of list){
+//         console.log (" using OF " + i);
+//     }
 
-});
+// });
 
 
 
