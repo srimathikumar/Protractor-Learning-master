@@ -22,68 +22,69 @@ describe('test subtraction with data provider - direct array', function () {
             console.log(data.b + "   --- b");
             expect(result).toEqual(data.expected);
             console.log(data.expected + "   --- e");
+            console.log("Test test test test test");
             
         });
     });
 });
 
-fdescribe('test addition with data provider - provider function', function () {
-    function plusProvider() {
-        return [
-            {a: 2, b: 3, expected: 5},
-            {a: 1, b: 15, expected: 29},
-            {a: 12, b: 13, expected: 25},
-            {a: 22, b: 13, expected: 35},
-        ];
-    }
+// fdescribe('test addition with data provider - provider function', function () {
+//     function plusProvider() {
+//         return [
+//             {a: 2, b: 3, expected: 5},
+//             {a: 1, b: 15, expected: 29},
+//             {a: 12, b: 13, expected: 25},
+//             {a: 22, b: 13, expected: 35},
+//         ];
+//     }
  
-    using(plusProvider, function (data) {
-        it('should calc with operator +', function () {
+//     using(plusProvider, function (data) {
+//         it('should calc with operator +', function () {
 
-             console.log(data.a + "   --- a");
-            console.log(data.b + "   --- b");
-            var result = data.a + data.b;
+//              console.log(data.a + "   --- a");
+//             console.log(data.b + "   --- b");
+//             var result = data.a + data.b;
  
-            expect(result).toEqual(data.expected);
-        });
-    });
-});
+//             expect(result).toEqual(data.expected);
+//         });
+//     });
+// });
 
-describe('My fantastic test', function () {
-    var objectDataProvider = {
-        'First one is awesome!': {a: 6, b: 3, expected: 9},
-        'Second test should fail': {a: 8, b: 1, expected: 10}
-    };
+// describe('My fantastic test', function () {
+//     var objectDataProvider = {
+//         'First one is awesome!': {a: 6, b: 3, expected: 9},
+//         'Second test should fail': {a: 8, b: 1, expected: 10}
+//     };
  
-    using(objectDataProvider, function ( data, description) {
-        it(description, function () {
-            console.log(description);
-            var result = data.a + data.b;
+//     using(objectDataProvider, function ( data, description) {
+//         it(description, function () {
+//             console.log(description);
+//             var result = data.a + data.b;
  
-            expect(result).toEqual(data.expected);
-        });
-    });
-});
+//             expect(result).toEqual(data.expected);
+//         });
+//     });
+// });
 
-describe('String examples', function(){
+// describe('String examples', function(){
 
-    function nameProvider(){
-        return[
-            {firstname : 'Srimathi', lastName : 'Kumar', age : 10, adult : true},
-            {firstname : 'ff', lastName : 'Kumar', age : 20, adult : true},
-            {firstname : 'Nikdsfdsgsghila', lastName : 'Kumar', age : 10, adult : false}, 
-            {firstname : 'sfsfsg', lastName : 'Kumar', age : 20 , adult : false}
-        ];
-    }
-    using(nameProvider, function(data){
-        it('should output names', function(){
-            console.log(data.firstname + " " + data.lastName + "--" + data.age + "--" + data.adult);
-            expect(data.firstName).toBe('Srimathi');
-        });
+//     function nameProvider(){
+//         return[
+//             {firstname : 'Srimathi', lastName : 'Kumar', age : 10, adult : true},
+//             {firstname : 'ff', lastName : 'Kumar', age : 20, adult : true},
+//             {firstname : 'Nikdsfdsgsghila', lastName : 'Kumar', age : 10, adult : false}, 
+//             {firstname : 'sfsfsg', lastName : 'Kumar', age : 20 , adult : false}
+//         ];
+//     }
+//     using(nameProvider, function(data){
+//         it('should output names', function(){
+//             console.log(data.firstname + " " + data.lastName + "--" + data.age + "--" + data.adult);
+//             expect(data.firstName).toBe('Srimathi');
+//         });
 
-    });
+//     });
 
-});
+// });
 
 // describe('function object example', function(){
 //     function printlabel(labelledObject : {label : string}){

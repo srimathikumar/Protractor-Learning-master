@@ -8,7 +8,8 @@ exports.config = {
   allScriptsTimeout: 11000,
   specs: [
     // './e2e/**/bin/courseware-tests/studyPlan-spec.js' 
-     './e2e/**/courseware-tests/greeter.ts'
+    //  './e2e/**/courseware-tests/greeter.ts'
+    './e2e/**/frisbyTest_spec.js'
 
     // './e2e/**/dashboardTest-spec.ts'
 
@@ -39,7 +40,7 @@ exports.config = {
   //       package: 'protractor-screenshoter-plugin',
   //       screenshotPath:'./reports',
   //       screenshotOnExpect: 'failure',
-  //       screenshotOnSpec: 'none',
+  //       screenshotOnSpec: 'none'
   //       withLogs: 'false',
   //       writeReportFreq: 'asap',
   //       clearFoldersBeforeTest: true,
