@@ -88,6 +88,7 @@ describe ('Dashboard Tests -', function(){
             dashboard.loginToDashboardViaFrontDoor('sat6@kaptest.com','kaptest');
 
             //verifying SAT account has homework instead of after class
+            //Test
             dashboard.getSessionTitle().then(function(text){
                 expect(text).toBe('Homework');
             });
